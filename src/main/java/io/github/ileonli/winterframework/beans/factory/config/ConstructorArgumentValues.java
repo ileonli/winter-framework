@@ -40,6 +40,10 @@ public class ConstructorArgumentValues {
         return Collections.unmodifiableMap(this.indexedArgumentValues);
     }
 
+    public boolean isEmpty() {
+        return this.indexedArgumentValues.isEmpty();
+    }
+
     // used to store value and it's type
     public static class ValueHolder {
 
